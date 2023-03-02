@@ -1,0 +1,11 @@
+@use './partials/mixins' as *;
+
+.plant-page {
+    min-height: 100vh;
+    
+    @include tablet {
+        display: flex;
+    }
+}
+
+

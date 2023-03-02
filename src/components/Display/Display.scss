@@ -1,0 +1,8 @@
+.plant-details {
+    padding: 1rem;
+    flex-grow: 1;
+    min-height: 90vh;
+    &__photo {
+        height: 12rem;
+    }
+}

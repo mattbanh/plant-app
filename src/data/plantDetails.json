@@ -1,0 +1,51 @@
+[
+  {
+    "id": "d801af14-8f94-4a51-b7f3-9d223fa3c201",
+    "name": "Dainty",
+    "avatar": "https://images.pexels.com/photos/916339/pexels-photo-916339.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "description": "Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.",
+    "age": "1 year",
+    "waterings": [
+      { "id": 1, "date": "02/01/2021", "withPlantFood": false }
+    ]
+  },
+  {
+    "id": "33f08540-14a6-45a9-96d4-7fd45c7d64d3",
+    "name": "Wallace",
+    "avatar": "https://images.pexels.com/photos/2826787/pexels-photo-2826787.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "description": "Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.",
+    "age": "2 months",
+    "waterings": [
+      { "id": 1, "date": "01/22/2021", "withPlantFood": true }
+    ]
+  },
+  {
+    "id": "d3db87cb-bf80-499f-872a-f5f8711a030d",
+    "name": "Champagne",
+    "avatar": "https://images.pexels.com/photos/2249959/pexels-photo-2249959.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "description": "Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale.",
+    "age": "3 weeks",
+    "waterings": []
+  },
+  {
+    "id": "6f7507e8-8da5-4323-beff-d352b1e90963",
+    "name": "Brute",
+    "avatar": "https://images.pexels.com/photos/3644742/pexels-photo-3644742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "description": "Celery potato scallion desert raisin horseradish spinach carrot soko. ",
+    "age": "4 days",
+    "waterings": [
+      { "id": 1, "date": "02/12/2021", "withPlantFood": true },
+      { "id": 2, "date": "01/15/2021", "withPlantFood": false }
+    ]
+  },
+  {
+    "id": "da5881ac-9ce6-4c4c-8597-babce260b7a5",
+    "name": "Gretel",
+    "avatar": "https://images.pexels.com/photos/4451739/pexels-photo-4451739.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "description": "Celery quandong swiss chard chicory earthnut pea potato.",
+    "age": "5 fortnights",
+    "waterings": [
+      { "id": 1, "date": "02/17/2021", "withPlantFood": false }
+    ]
+  }
+]
