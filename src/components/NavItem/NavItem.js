@@ -1,12 +1,11 @@
-import "./Nav.scss"
+import "./NavItem.scss"
+import { Link } from "react-router-dom"
 
-export default function NavItem({id, plantName, renderPlant}) {
-    
+export default function NavItem({id, plantName}) {    
     return (
-        // Each individual nav item contains an onClick
-        // Use anonymous function to prevent invocation of function that requires a parameter
-        <li className="nav__list-item" onClick={() => {renderPlant(id)}}>
-            {plantName}
+        // Converted the onClick to a dynamic link with id of plant
+        <li className="nav__list-item">
+            <Link className="nav__list-link" to={`/plants/${id}`}>{plantName}</Link> 
         </li>
     )
 }

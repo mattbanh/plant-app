@@ -1,40 +1,21 @@
 import './App.scss';
-import plantDetails from "../src/data/plantDetails.json";
-import plants from "../src/data/plants.json";
-import Nav from "../src/components/Nav/Nav"
-import Display from "../src/components/Display/Display";
-import {useState} from "react";
-import Footer from './components/Footer/Footer';
-const developers = ["Brendon", "Erik", "Gabe", "Nasrullah", "Naya"]
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import PlantPage from './pages/PlantPage/PlantPage';
+
 
 
 function App() {
-  // Using state to track which plant is active. Active plant will be shown in Display and removed from Nav
-  const [activePlant, setActivePlant] = useState(plantDetails[0]);
-  
-  // To choose right ID (to be rendered)
-  const renderPlant = (plantId)  => {
-
-    // Using find instead of filter allows us to get just the object and not another array
-    const renderedPlant = plantDetails.find((plant) => plant.id === plantId);
-
-    setActivePlant(renderedPlant);    
-  }
-
-  // Filter out the currently selected plant to not include it in the nav
-  const filteredPlants = plants.filter((plant) => plant.id !== activePlant.id);
-
+  // Refactored all of App to only contain routes. Moved all logic and return to pages/PlantPage/PlantPage.js
   return (
-    <div className="plant-page">
-      {/* Pass filtered list which doesn't include active plant. Pass renderPlant which changes the active plant */}
-      <Nav filteredPlantList={filteredPlants} renderPlant={renderPlant}/>
-      <div>
-        {/* Pass activePlant object with all plant details to be rendered in Display */}
-        <Display activePlant={activePlant} />
-        {/* Give credit to the best group of devs */}
-        <Footer developers={developers} />  
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {/* All routes maintain the same "page" which have all the components that we want the paths to hold */}
+        <Route path="/" element={<PlantPage />}></Route>
+        <Route path="/plants" element={<PlantPage />}></Route>
+        <Route path="/plants/:plantId" element={<PlantPage />}></Route>
+      </Routes>
+    </BrowserRouter>
+ 
   );
 }
 

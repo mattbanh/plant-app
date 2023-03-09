@@ -2,8 +2,11 @@
     display: block;
     background: none;
     border: none;
-    font: inherit;
     margin-bottom: 1rem;
+}
+
+.nav__list-link {
+    font: inherit;
     cursor: pointer;
     text-decoration: underline;
     color: brown;
