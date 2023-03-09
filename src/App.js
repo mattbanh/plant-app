@@ -14,10 +14,6 @@ function App() {
   
   // To choose right ID (to be rendered)
   const renderPlant = (plantId)  => {
-    
-    // ORIGINAL RENDERED PLANT CREATED AN ARRAY:
-    // const renderedPlant = plantDetails.filter((plant) => plant.id === plantId);
-    // setActivePlant(renderedPlant[0])
 
     // Using find instead of filter allows us to get just the object and not another array
     const renderedPlant = plantDetails.find((plant) => plant.id === plantId);
